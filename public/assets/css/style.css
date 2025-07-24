@@ -1,0 +1,24 @@
+:root {
+  --azul: #1b357e;
+  --azul2: #1351d8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 120px 1fr 120px;
+  background-color: #fff;
+  gap: 0px;
+}
