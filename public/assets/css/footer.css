@@ -5,6 +5,8 @@ footer {
   align-items: center;
   justify-content: space-between;
   flex-flow: row nowrap;
+  gap: 1rem;
+  color: #fff;
 }
 
 .footer-div-container {
