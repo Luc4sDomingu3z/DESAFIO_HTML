@@ -1,0 +1,116 @@
+.top-header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 6px;
+  background-color: #fff;
+  filter: drop-shadow(0px 4px 6px #00000010);
+}
+
+.top-header__logo-container {
+  width: 100%;
+  justify-self: flex-start;
+  max-width: 15rem;
+}
+
+.top-header__logo-container figure img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.top-header__nav {
+  width: 100%;
+  max-width: 25rem;
+  margin: auto;
+  transform: translateX(-25%);
+}
+
+.top-header__nav#fixed-nav {
+  display: none;
+}
+
+.top-header__nav-ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-header__nav-li {
+  text-transform: capitalize;
+}
+
+.top-header__nav-li a {
+  text-decoration: none;
+  font-size: 14pt;
+  padding: 0.25rem;
+  font-weight: 600;
+  color: var(--azul2);
+  position: relative;
+  transition: all 250ms ease-out;
+}
+
+.top-header__nav-li a::before {
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  min-width: 1%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--azul2);
+  opacity: 0;
+  transition: all 300ms ease-out;
+}
+
+.top-header__nav-li a:hover {
+  filter: brightness(120%);
+}
+
+.top-header__nav-li a:hover::before {
+  min-width: 100%;
+  opacity: 1;
+  transition: all 300ms ease;
+}
+
+@media (max-width: 850px) {
+  .top-header__nav {
+    transform: translate(0);
+  }
+}
+
+@media (max-width: 610px) {
+  .top-header__nav {
+    display: none !important;
+  }
+  .top-header__nav#fixed-nav {
+    position: fixed;
+    transform: translateY(100%);
+    background-color: var(--azul);
+    width: 100%;
+    max-width: 100%;
+    bottom: 0;
+    min-height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .top-header__nav-ul {
+    flex-flow: column wrap;
+    gap: 8px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .top-header__nav-li a {
+    color: #fff;
+    font-size: calc(4vw);
+  }
+}

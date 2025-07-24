@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import "./reset.css";
+@import "./header.css";
+@import "./footer.css";
+
 :root {
   --azul: #1b357e;
   --azul2: #1351d8;
+  --Lato: "Lato";
 }
 
 * {
@@ -18,7 +25,8 @@ body {
   width: 100%;
   min-height: 100vh;
   display: grid;
-  grid-template-rows: 120px 1fr 120px;
+  grid-template-rows: minmax(120px, max-content) 1fr max-content;
   background-color: #fff;
   gap: 0px;
+  font-family: var(--Lato);
 }
