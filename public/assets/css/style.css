@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
 @import "./reset.css";
 @import "./header.css";
 @import "./footer.css";
+@import "./checkbox.css";
 
 :root {
   --azul: #1b357e;
   --azul2: #1351d8;
   --Lato: "Lato";
+
+  --bannerWidth: 1440px;
 }
 
 * {
@@ -29,4 +32,93 @@ body {
   background-color: #fff;
   gap: 0px;
   font-family: var(--Lato);
+}
+
+/* Main content */
+
+.main-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.main-content-banner {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  aspect-ratio: 16/9;
+  margin: auto;
+  position: relative;
+}
+
+.main-content-banner .banner-container {
+  width: 100%;
+  height: 100%;
+  outline: red;
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  inset: 0;
+}
+
+.main-content-banner .banner-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-content-banner .banner-container figcaption {
+  /* position: absolute; */
+  text-align: center;
+  padding: 0.34rem;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 2px auto;
+}
+
+.launch-container {
+  width: 100%;
+  outline: 1px solid red;
+}
+
+.launch-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+  justify-content: center;
+  gap: 10px;
+}
+
+.launch-card {
+  aspect-ratio: 4/3;
+  box-shadow: 0px 4px 8px #00000020;
+  background-color: #fff;
+}
+
+.launch-card__thumbnail {
+  width: 100%;
+}
+
+.launch-card__thumbnail figure {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.launch-card__thumbnail figure img {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+}
+
+.launch-card__info {
+  display: flex;
+  flex-flow: row wrap;
 }

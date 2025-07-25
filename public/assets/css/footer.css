@@ -73,9 +73,11 @@ footer {
 @media (max-width: 500px) {
   footer {
     flex-flow: row wrap;
+    justify-content: center;
   }
 
-  .footer-div-container.--logo {
-    justify-content: flex-start;
+  .footer-div-container.--logo, .footer-div-container .footer-div-socials, .footer-div-container {
+    justify-content: center;
   }
+  
 }
