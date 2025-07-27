@@ -7,6 +7,7 @@ footer {
   flex-flow: row nowrap;
   gap: 1rem;
   color: #fff;
+  margin-top: 1.5rem;
 }
 
 .footer-div-container {
@@ -76,8 +77,9 @@ footer {
     justify-content: center;
   }
 
-  .footer-div-container.--logo, .footer-div-container .footer-div-socials, .footer-div-container {
+  .footer-div-container.--logo,
+  .footer-div-container .footer-div-socials,
+  .footer-div-container {
     justify-content: center;
   }
-  
 }

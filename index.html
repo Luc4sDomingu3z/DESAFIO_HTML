@@ -1,21 +1,60 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/assets/css/style.css" />
+    <title>Portal Ford</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./public/assets/css/style.css" />
-  <title>Portal Ford</title>
-</head>
-
-<body>
-  <header aria-label="Cabecalho" class="top-header">
-    <section class="top-header__logo-container">
-      <figure>
-        <img src="./public/assets/img/logos/logo-ford-256.png" alt="Logo da Ford" />
-      </figure>
-    </section>
-    <nav class="top-header__nav">
+  <body>
+    <header aria-label="Cabecalho" class="top-header">
+      <section class="top-header__logo-container">
+        <figure>
+          <img
+            src="./public/assets/img/logos/logo-ford-256.png"
+            alt="Logo da Ford"
+          />
+        </figure>
+      </section>
+      <nav class="top-header__nav">
+        <ul class="top-header__nav-ul">
+          <li class="top-header__nav-li"><a href="/index.html">Home</a></li>
+          <li class="top-header__nav-li">
+            <a href="./pages/lancamento.html">Lançamento</a>
+          </li>
+          <li class="top-header__nav-li">
+            <a href="./pages/contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        type="button"
+        id="open-nav"
+        onclick="toggleNav(true)"
+        title="Abrir menu"
+      >
+        <img
+          src="./public/assets/img/icons/menu-ham"
+          loading="lazy"
+          alt="Ícone para abrir"
+        />
+      </button>
+    </header>
+    <!-- Menu Fixo -->
+    <nav id="fixed-nav" class="top-header__nav closed-menu">
+      <button
+        type="button"
+        id="close-nav"
+        onclick="toggleNav(false)"
+        title="Fechar menu"
+      >
+        <img
+          src="./public/assets/img/icons/close-menu"
+          loading="lazy"
+          alt="Ícone para fechar"
+        />
+      </button>
       <ul class="top-header__nav-ul">
         <li class="top-header__nav-li"><a href="/index.html">Home</a></li>
         <li class="top-header__nav-li">
@@ -26,62 +65,63 @@
         </li>
       </ul>
     </nav>
-    <button type="button" id="open-nav" onclick="toggleNav(true)" title="Abrir menu">
-      <img src="./public/assets/img/icons/menu-ham" loading="lazy" alt="Ícone para abrir" />
-    </button>
-  </header>
-  <!-- Menu Fixo -->
-  <nav id="fixed-nav" class="top-header__nav closed-menu">
-    <button type="button" id="close-nav" onclick="toggleNav(false)" title="Fechar menu">
-      <img src="./public/assets/img/icons/close-menu" loading="lazy" alt="Ícone para fechar" />
-    </button>
-    <ul class="top-header__nav-ul">
-      <li class="top-header__nav-li"><a href="/index.html">Home</a></li>
-      <li class="top-header__nav-li">
-        <a href="./pages/lancamento.html">Lançamento</a>
-      </li>
-      <li class="top-header__nav-li"><a href="./pages/contato.html">Contato</a></li>
-    </ul>
-  </nav>
 
-  <!-- Conteudo principal -->
-  <main class="main-container">
-    <section class="main-content-banner" aria-label="banner">
-      <picture class="banner-container">
-        <source media="(min-width: 648px)" srcset="./public/assets/img/imagem_1.jpg">
-        <img src="./public/assets/img/ford_ranger_mobile.jpg " alt="" loading="lazy" />
-        <figcaption>Esta é a nova Ford Ranger 2022. Verifique novidades <a href="/">aqui</a></figcaption>
-      </picture>
-    </section>
-  </main>
-  <!-- Conteudo principal Fim -->
+    <!-- Conteudo principal -->
+    <main class="main-container">
+      <section class="main-content-banner" aria-label="banner">
+        <section class="banner-container">
+          <picture class="banner-container-img">
+            <source
+              media="(min-width: 648px)"
+              srcset="./public/assets/img/imagem_1.jpg"
+            />
+            <img
+              src="./public/assets/img/ford_ranger_mobile.jpg "
+              alt=""
+              loading="lazy"
+            />
+            <div>
+              Esta é a nova Ford Ranger 2022. Verifique novidades
+              <a href="/">aqui</a>
+            </div>
+            <!-- <figcaption></figcaption> -->
+          </picture>
+        </section>
+      </section>
+    </main>
+    <!-- Conteudo principal Fim -->
 
-  <footer aria-label="Rodape">
-    <section class="footer-div-container --redes-sociais">
-      <strong>Redes Sociais</strong>
-      <div class="footer-div-socials">
-        <a href="/facebook" title="facebook">
-          <img src="./public/assets/img/icons/facebook-50.png" alt="" />
-        </a>
-        <a href="/youtube" title="youtube">
-          <img src="./public/assets/img/icons/youtube-squared-50.png" alt="" />
-        </a>
-        <a href="/instagram" title="instagram">
-          <img src="./public/assets/img/icons/instagram-logo-50.png" alt="" />
-        </a>
-      </div>
-    </section>
-    <section class="footer-div-container" id="copyright" align="center">
-      <p>&copy; 2025 - 2025 www.fordenter.com.br - All Rights Reserved.</p>
-    </section>
-    <section class="footer-div-container --logo">
-      <figure>
-        <img src="./public/assets/img/ford-96.png" alt="" />
-      </figure>
-    </section>
-  </footer>
+    <footer aria-label="Rodape">
+      <section class="footer-div-container --redes-sociais">
+        <strong>Redes Sociais</strong>
+        <div class="footer-div-socials">
+          <a href="/facebook" title="facebook">
+            <img src="./public/assets/img/icons/facebook-50.png" alt="" />
+          </a>
+          <a href="/youtube" title="youtube">
+            <img
+              src="./public/assets/img/icons/youtube-squared-50.png"
+              alt=""
+            />
+          </a>
+          <a href="/instagram" title="instagram">
+            <img src="./public/assets/img/icons/instagram-logo-50.png" alt="" />
+          </a>
+        </div>
+      </section>
+      <section class="footer-div-container" id="copyright" align="center">
+        <p>&copy; 2025 - 2025 www.fordenter.com.br - All Rights Reserved.</p>
+      </section>
+      <section class="footer-div-container --logo">
+        <figure>
+          <img src="./public/assets/img/ford-96.png" alt="" />
+        </figure>
+      </section>
+    </footer>
 
-  <script src="./public/assets/js/index.js" type="application/javascript"></script>
-</body>
-
+    <script
+      src="./public/assets/js/index.js"
+      type="application/javascript"
+    ></script>
+  </body>
 </html>

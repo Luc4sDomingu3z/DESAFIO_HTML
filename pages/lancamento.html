@@ -1,157 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/assets/css/style.css" />
+    <title>Portal Ford | Lançamentos</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../public/assets/css/style.css">
-  <title>Portal Ford | Lançamentos</title>
-</head>
-
-<body>
-  <header aria-label="Cabecalho" class="top-header">
-    <section class="top-header__logo-container">
-      <figure>
-        <img src="../public/assets/img/logos/logo-ford-256.png" alt="Logo da Ford" />
-      </figure>
-    </section>
-    <nav class="top-header__nav">
+  <body>
+    <header aria-label="Cabecalho" class="top-header">
+      <section class="top-header__logo-container">
+        <figure>
+          <img
+            src="../public/assets/img/logos/logo-ford-256.png"
+            alt="Logo da Ford"
+          />
+        </figure>
+      </section>
+      <nav class="top-header__nav">
+        <ul class="top-header__nav-ul">
+          <li class="top-header__nav-li"><a href="../index.html">Home</a></li>
+          <li class="top-header__nav-li">
+            <a href="./lancamento.html">Lançamento</a>
+          </li>
+          <li class="top-header__nav-li">
+            <a href="./contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        type="button"
+        id="open-nav"
+        onclick="toggleNav(true)"
+        title="Abrir menu"
+      >
+        <img
+          src="../public/assets/img/icons/menu-ham"
+          loading="lazy"
+          alt="Ícone para abrir"
+        />
+      </button>
+    </header>
+    <!-- Menu Fixo -->
+    <nav id="fixed-nav" class="top-header__nav closed-menu">
+      <button
+        type="button"
+        id="close-nav"
+        onclick="toggleNav(false)"
+        title="Fechar menu"
+      >
+        <img
+          src="../public/assets/img/icons/close-menu"
+          loading="lazy"
+          alt="Ícone para fechar"
+        />
+      </button>
       <ul class="top-header__nav-ul">
         <li class="top-header__nav-li"><a href="/index.html">Home</a></li>
         <li class="top-header__nav-li">
           <a href="./lancamento.html">Lançamento</a>
         </li>
-        <li class="top-header__nav-li">
-          <a href="./contato.html">Contato</a>
-        </li>
+        <li class="top-header__nav-li"><a href="./contato.html">Contato</a></li>
       </ul>
     </nav>
-    <button type="button" id="open-nav" onclick="toggleNav(true)" title="Abrir menu">
-      <img src="../public/assets/img/icons/menu-ham" loading="lazy" alt="Ícone para abrir" />
-    </button>
-  </header>
-  <!-- Menu Fixo -->
-  <nav id="fixed-nav" class="top-header__nav closed-menu">
-    <button type="button" id="close-nav" onclick="toggleNav(false)" title="Fechar menu">
-      <img src="../public/assets/img/icons/close-menu" loading="lazy" alt="Ícone para fechar" />
-    </button>
-    <ul class="top-header__nav-ul">
-      <li class="top-header__nav-li"><a href="/index.html">Home</a></li>
-      <li class="top-header__nav-li">
-        <a href="./lancamento.html">Lançamento</a>
-      </li>
-      <li class="top-header__nav-li"><a href="./contato.html">Contato</a></li>
-    </ul>
-  </nav>
 
-  <main class="main-container">
-    <section class="main-content-banner">
-      <!-- <iframe src="https://www.youtube.com/watch?v=vQsryuNmsL0" frameborder="0"></iframe> -->
-      <!-- <video>
-        <source src="https://www.youtube.com/watch?v=vQsryuNmsL0">
-      </video> -->
-    </section>
-
-    <section class="container">
-      <section class="launch-container">
-        <div class="launch-card-container">
-          <article class="launch-card">
-            <div class="launch-card__thumbnail">
-              <figure>
-                <img src="../public/assets/img/XL Cabine.jpg" alt="">
-              </figure>
-            </div>
-            <article class="launch-card__info">
-              <div class="checkbox-wrapper-46">
-                <input type="checkbox" class="inp-cbx" name="compare" id="compare-v1" title=".">
-                <label class="cbx" for="compare-v1"><span>
-                    <svg width="12px" height="10px" viewbox="0 0 12 10">
-                      <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                    </svg></span><span></span>
-                </label>
-              </div>
-              <div>
-                <h1>XL Cabine</h1>
-                <h2>R$ 192,990</h2>
-              </div>
-              </form>
-            </article>
-          </article>
-          <article class="launch-card">
-            <div class="launch-card__thumbnail">
-              <figure>
-                <img src="../public/assets/img/xls 2.2 diesel.jpg" alt="">
-              </figure>
-            </div>
-            <article class="launch-card__info">
-              <div class="checkbox-wrapper-46">
-                <input type="checkbox" class="inp-cbx" name="compare" id="compare-v2" title=".">
-                <!-- <input class="inp-cbx" id="cbx-46" type="checkbox" /> -->
-                <label class="cbx" for="compare-v2"><span>
-                    <svg width="12px" height="10px" viewbox="0 0 12 10">
-                      <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                    </svg></span><span></span>
-                </label>
-              </div>
-              <div>
-                <h1>XLS 2.2 Diesel</h1>
-                <h2>R$ 278,245</h2>
-              </div>
-            </article>
-          </article>
-          <article class="launch-card">
-            <div class="launch-card__thumbnail">
-              <figure>
-                <img src="../public/assets/img/storm.jpg" alt="">
-              </figure>
-            </div>
-            <article class="launch-card__info">
-              <div class="checkbox-wrapper-46">
-                <input type="checkbox" class="inp-cbx" name="compare" id="compare-v3" title=".">
-                <label class="cbx" for="compare-v3"><span>
-                    <svg width="12px" height="10px" viewbox="0 0 12 10">
-                      <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
-                    </svg></span><span></span>
-                </label>
-              </div>
-
-              <div>
-                <h1>Storm</h1>
-                <h2>R$ 458,900</h2>
-              </div>
-            </article>
-          </article>
+    <main class="main-container">
+      <section class="main-content-banner --launch">
+        <div>
+          <video
+            autoplay
+            loop
+            muted
+            src="../public/assets/videos/launchFord.mp4"
+          ></video>
         </div>
       </section>
-    </section>
-  </main>
 
-  <footer aria-label="Rodape">
-    <section class="footer-div-container --redes-sociais">
-      <strong>Redes Sociais</strong>
-      <div class="footer-div-socials">
-        <a href="/facebook" title="facebook">
-          <img src="../public/assets/img/icons/facebook-50.png" alt="" />
-        </a>
-        <a href="/youtube" title="youtube">
-          <img src="../public/assets/img/icons/youtube-squared-50.png" alt="" />
-        </a>
-        <a href="/instagram" title="instagram">
-          <img src="../public/assets/img/icons/instagram-logo-50.png" alt="" />
-        </a>
-      </div>
-    </section>
-    <section class="footer-div-container" id="copyright" align="center">
-      <p>&copy; 2025 - 2025 www.fordenter.com.br - All Rights Reserved.</p>
-    </section>
-    <section class="footer-div-container --logo">
-      <figure>
-        <img src="../public/assets/img/ford-96.png" alt="" />
-      </figure>
-    </section>
-  </footer>
+      <section class="container">
+        <section class="launch-container">
+          <div class="launch-card-container">
+            <article class="launch-card">
+              <div class="launch-card__thumbnail">
+                <figure>
+                  <img src="../public/assets/img/XL Cabine.jpg" alt="" />
+                </figure>
+              </div>
+              <article class="launch-card__info">
+                <div class="checkbox-wrapper-46">
+                  <input
+                    type="checkbox"
+                    class="inp-cbx"
+                    name="compare"
+                    id="compare-v1"
+                    title="."
+                  />
+                  <label class="cbx" for="compare-v1"
+                    ><span>
+                      <svg width="12px" height="10px" viewbox="0 0 12 10">
+                        <polyline
+                          points="1.5 6 4.5 9 10.5 1"
+                        ></polyline></svg></span
+                    ><span></span>
+                  </label>
+                </div>
+                <div>
+                  <h1>XL Cabine Simples 2.2 Diesel 4X4 MT 2022</h1>
+                  <h2>R$ 183,850</h2>
+                </div>
+              </article>
+            </article>
+            <article class="launch-card">
+              <div class="launch-card__thumbnail">
+                <figure>
+                  <img src="../public/assets/img/xls 2.2 diesel.jpg" alt="" />
+                </figure>
+              </div>
+              <article class="launch-card__info">
+                <div class="checkbox-wrapper-46">
+                  <input
+                    type="checkbox"
+                    class="inp-cbx"
+                    name="compare"
+                    id="compare-v2"
+                    title="."
+                  />
+                  <!-- <input class="inp-cbx" id="cbx-46" type="checkbox" /> -->
+                  <label class="cbx" for="compare-v2"
+                    ><span>
+                      <svg width="12px" height="10px" viewbox="0 0 12 10">
+                        <polyline
+                          points="1.5 6 4.5 9 10.5 1"
+                        ></polyline></svg></span
+                    ><span></span>
+                  </label>
+                </div>
+                <div>
+                  <h1>XLS 2.2 Diesel 4X4 AT 2022</h1>
+                  <h2>R$ 220,690</h2>
+                </div>
+              </article>
+            </article>
+            <article class="launch-card">
+              <div class="launch-card__thumbnail">
+                <figure>
+                  <img src="../public/assets/img/storm.jpg" alt="" />
+                </figure>
+              </div>
+              <article class="launch-card__info">
+                <div class="checkbox-wrapper-46">
+                  <input
+                    type="checkbox"
+                    class="inp-cbx"
+                    name="compare"
+                    id="compare-v3"
+                    title="."
+                  />
+                  <label class="cbx" for="compare-v3"
+                    ><span>
+                      <svg width="12px" height="10px" viewbox="0 0 12 10">
+                        <polyline
+                          points="1.5 6 4.5 9 10.5 1"
+                        ></polyline></svg></span
+                    ><span></span>
+                  </label>
+                </div>
 
-  <script src="../public/assets/js/index.js" type="application/javascript"></script>
-</body>
+                <div>
+                  <h1>Storm 3.2 Diesel 4X4 AT 2022</h1>
+                  <h2>R$ 222,790</h2>
+                </div>
+              </article>
+            </article>
+          </div>
+          <div class="launch-action">
+            <button type="button">Comparar Carros</button>
+          </div>
+        </section>
+      </section>
+    </main>
 
+    <footer aria-label="Rodape">
+      <section class="footer-div-container --redes-sociais">
+        <strong>Redes Sociais</strong>
+        <div class="footer-div-socials">
+          <a href="/facebook" title="facebook">
+            <img src="../public/assets/img/icons/facebook-50.png" alt="" />
+          </a>
+          <a href="/youtube" title="youtube">
+            <img
+              src="../public/assets/img/icons/youtube-squared-50.png"
+              alt=""
+            />
+          </a>
+          <a href="/instagram" title="instagram">
+            <img
+              src="../public/assets/img/icons/instagram-logo-50.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </section>
+      <section class="footer-div-container" id="copyright" align="center">
+        <p>&copy; 2025 - 2025 www.fordenter.com.br - All Rights Reserved.</p>
+      </section>
+      <section class="footer-div-container --logo">
+        <figure>
+          <img src="../public/assets/img/ford-96.png" alt="" />
+        </figure>
+      </section>
+    </footer>
+
+    <script
+      src="../public/assets/js/index.js"
+      type="application/javascript"
+    ></script>
+  </body>
 </html>
