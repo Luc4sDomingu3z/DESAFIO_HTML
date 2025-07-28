@@ -111,6 +111,7 @@ body {
   object-fit: cover;
   inset: 0;
   display: block;
+  -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
 }
@@ -240,7 +241,7 @@ body {
 }
 
 .contato-container-form form h1 {
-  font-size: 14pt;
+  font-size: 2rem;
   color: #323232;
   margin-bottom: 1rem;
 }
@@ -286,4 +287,10 @@ body {
 .contato-container-form form fieldset button:hover {
   background-color: var(--azul);
   border-color: var(--azul);
+}
+
+@media (max-width: 600px) {
+  .container, .contato-container, .launch-container {
+    padding: 0.55rem;
+  }
 }

@@ -27,7 +27,7 @@ function toggleNav(key = true) {
   const copyrightElement = document.getElementById("copyright");
   if (copyrightElement === null) return;
   copyrightElement.innerHTML =
-    `<p style="text-align:'center'">&copy; 2025 - ` +
+    `<p style="text-align:center; width: 100%;">&copy; 2025 - ` +
     new Date().getFullYear() +
     " www.fordenter.com.br - All Rights Reserved.</p>";
 })();
