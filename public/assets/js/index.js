@@ -14,11 +14,13 @@ function toggleNav(key = true) {
       if (navFixed.classList.contains("closed-menu"))
         navFixed.classList.remove("closed-menu");
       navFixed.classList.add("opened-menu");
+      document.body.style.overflowY='hidden'
       break;
     case false:
       if (navFixed.classList.contains("opened-menu"))
         navFixed.classList.remove("opened-menu");
       navFixed.classList.add("closed-menu");
+      document.body.style.overflowY='initial'
       break;
   }
 }
