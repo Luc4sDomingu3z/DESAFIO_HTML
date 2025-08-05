@@ -17,6 +17,7 @@
 .contato-container-img {
   width: 100%;
   max-width: max-content;
+  padding-top: 1.5rem;
 }
 
 .contato-container-form {

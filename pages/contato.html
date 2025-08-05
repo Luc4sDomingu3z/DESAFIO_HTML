@@ -72,9 +72,9 @@
             <form method="post" action="">
               <h1>Sobre você</h1>
               <fieldset>
-                <input type="text" placeholder="NOME*" required />
-                <input type="text" placeholder="SOBRENOME*" required />
-                <input type="text" placeholder="CPF*" required />
+                <input type="text" placeholder="NOME COMPLETO*" required />
+                <!-- <input type="text" placeholder="SOBRENOME*" required /> -->
+                <!-- <input type="text" placeholder="CPF*" required /> -->
               </fieldset>
               <fieldset>
                 <input type="email" placeholder="E-MAIL*" required />
@@ -82,7 +82,7 @@
               </fieldset>
               <fieldset>
                 <select required>
-                  <option value="0">Como deseja ser contatado</option>
+                  <option value="0" disabled selected hidden>Tipo de contato</option>
                   <option value="1">Elogio</option>
                   <option value="2">Reclamação</option>
                   <option value="3">Solicitação</option>
