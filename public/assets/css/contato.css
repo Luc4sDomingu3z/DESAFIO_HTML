@@ -1,0 +1,99 @@
+/* Contato */
+
+.contato-container {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.contato-container__div-form {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.contato-container-img {
+  width: 100%;
+  max-width: max-content;
+}
+
+.contato-container-form {
+  width: 100%;
+  max-width: 500px;
+}
+
+.contato-container-form form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.contato-container-form form h1 {
+  font-size: 2rem;
+  color: #323232;
+  margin-bottom: 1rem;
+}
+
+.contato-container-form form fieldset {
+  border: none;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 6px;
+}
+
+.contato-container-form form fieldset legend {
+  background-color: #fff;
+  transform: translate(10px, 4px);
+  padding: 0.24rem;
+  color: #434343;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.contato-container-form form fieldset input,
+.contato-container-form form fieldset select,
+.contato-container-form form fieldset textarea {
+  border: 1px solid #aeaeae;
+  color: #434343;
+  padding: 0.68rem;
+  border-radius: 5px;
+  font-size: 13pt;
+  font-weight: 200;
+  background-color: #fff;
+  resize: none;
+  width: 100%;
+}
+
+.contato-container-form form fieldset input:focus,
+.contato-container-form form fieldset select:focus,
+.contato-container-form form fieldset textarea:focus {
+  outline: 1px solid var(--azul2);
+  border-color: transparent;
+}
+
+.contato-container-form form fieldset button {
+  background-color: var(--azul2);
+  color: #fff;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  margin-left: auto;
+  border: 2px solid var(--azul2);
+  padding: 0.65rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 250ms ease-out;
+}
+
+.contato-container-form form fieldset button:hover {
+  background-color: var(--azul);
+  border-color: var(--azul);
+}
+
+@media (max-width: 600px) {
+  .container, .contato-container, .launch-container {
+    padding: 0.55rem;
+  }
+}
